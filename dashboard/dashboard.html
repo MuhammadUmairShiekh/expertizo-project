@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chart.css">
+<!-- <a href="../logout.html"></a> -->
+  </head>
+  <body>
+    
+    <div class="log"   >
+      <div class="child">
+    <button  class="logi" onclick="logout()"><img  src="../images/switch.png" alt=""></button>
+    <h5>Wel Come  Name: <script>document.write(localStorage.getItem("name"))</script></h5>
+     <h5 class="Email" >   Your email is  : <script>document.write(localStorage.getItem("email"))</script></h5>
+
+      </div>
+   
+  </div>
+    <div class="container">
+    <h1>Expense Management System</h1>
+
+      <!-- <h4></h4> -->
+      <!-- <h1 id="">PKR 0.00</h1> -->
+      <div class="inc-exp-container">
+        <div class="top">
+          <img style="filter:invert(1);" width="40%" src="./images/money-bag.png" alt="">
+
+          <h4> Remaing Balance</h4>
+
+          <p id="balance" style="color: white ;font-weight: 500; " >
+            +PKR 0.00
+          </p>
+        </div>
+        <div class="top">
+          <img style="filter:invert(1);" width="40%" src="./images/balance.png" alt="">
+
+            <h4>TOTAL BUDGET</h4>
+            <p id="money-plus" class="money-plus">
+              +PKR 0.00
+            </p>
+          </div>
+        <div class="top" >
+          <img style="filter:invert(1);" width="40%" src="./images/expenses.png" alt="">
+          <h4>Expense Amount</h4>
+          <p id="money-minus" class="money-minus">
+            -PKR 0.00
+          </p>
+        </div>
+      </div>    
+
+
+      <div class="bac" >
+        <div class="chat">
+        <div class="chart">
+          <canvas id="douChart" width="400" height="400"></canvas>
+          </div>
+          <div class="chart">
+            <canvas id="barChart" width="400" height="400"></canvas>
+    
+        </div>
+      </div>
+      <h3> Transaction History</h3>
+      <ul id="list" class="list">
+        <!-- <li class="minus">
+          Cash <span>-$400</span
+          ><button class="delete-btn">x</button>
+        </li> -->
+      </ul>
+      <h3>Add New Transition</h3>
+      <form id="form">
+          <div class="form-control">
+              <label for="text">Head of Expense & Description</label>
+              <input type="text" id="text" placeholder="Enter Expense & Description...." autocomplete="off" >
+          </div>
+          <div class="form-control">
+              <label for="amount">Amount (- expense  + income )</label>
+              <input type="number" id="amount" placeholder="Enter amount..." autocomplete="off"> 
+          </div>
+        </div>
+          <button class="btn">Add Your Transaction</button>
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- JavaYscript Project  -->
+    <script src="../js.file/script.js"></script>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="../js.file/chart1.js" ></script>
+    <script src="../js.file/chart2.js" ></script>
+    <script src="../AppLogin.js" ></script>
+  </body>
+</html>

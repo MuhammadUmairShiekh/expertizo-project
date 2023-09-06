@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #bac3cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background: #34495e;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px #34495e;
+    width: 400px;
+    height: 200px;
+    color: #FFF;
+    border-radius: 10px;
+    text-align: center;
+   
+    
+}
+.main h1{
+   
+   margin: 20px;
+}
+.container a{
+    color: white;
+    display: inline-block;
+    margin: 20px;
+}
+
+@media screen and (max-width: 300px)  {
+
+    
+
+    .main h1{
+        margin: 10px;
+    }
+
+}
